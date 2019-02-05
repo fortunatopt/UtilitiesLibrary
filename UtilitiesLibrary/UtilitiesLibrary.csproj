@@ -6,6 +6,8 @@
     <PackageId>UtilitiesLibrary_fortunatopt</PackageId>
     <Authors>Patrick Fortunato</Authors>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/fortunatopt/UtilitiesLibrary</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/fortunatopt/UtilitiesLibrary</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
