@@ -41,9 +41,48 @@ string GetSignatureTime(HttpRequestMessage request)
 string GenerateSignatureInput(string httpVerb, string uriBase, string dt, string contentType = null, string qsParams = null);
 ```
 ## HTTP
+```csharp
+string PostJSON(string url, object postObject);
 
+string PostJSONSigned(string url, object postObject, string accessKey, string secretKey, string qString = null);
+
+string GetJSONSigned(string url, string accessKey, string secretKey, string qString = null);
+
+Task<string> GetJSONSignedAsync(string url, string accessKey, string secretKey, string qString = null);
+
+string PostFORMEncoded(string url, string formPostData);
+
+string GetJSON(string url);
+
+string GetJSONWithIp(string url, string ip);
+
+string GetJSONNoContType(string url);
+
+string GetHashedToken(string httpVerb, string uriBase, string contentType, string dt, string qsParams, string body, string secretKey);
+
+string AuthString(bool first, bool unix, string key, string privateKey);
+
+string GetServerIP(this string criteria);
+```
 ## Numbers
+```csharp
+long[] ToLongArray(this string value, char separator);
 
+int[] ToIntArray(this string value, char separator);
+
+int StringToInt(this string input);
+```
 ## Object Copier
-
+```csharp
+T CloneObject<T>(this T objSource);
+```
 ## Strings
+```csharp
+List<string> ToStringList(this string value, char separator);
+
+string StripCharacter(this string variable, string characters);
+
+ToSnakeCase(this string str);
+
+Left(this string value, int maxLength);
+```
